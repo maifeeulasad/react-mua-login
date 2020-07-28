@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Login from "./Login";
+import testIcon from './test.svg';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <Login
+          /*icon = {testIcon}*/
+          /*signupLink={"/signup/test"}*/
+          /*motto={"You've done half of the job by joining, now just do the rest"}*/
+             login={(blabla,password)=>{
+                 console.debug(blabla);
+                 console.debug(password);
+             }}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
