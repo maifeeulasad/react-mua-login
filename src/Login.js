@@ -21,7 +21,7 @@ class Login extends React.Component {
 
     login = (e) => {
         e.preventDefault();
-        if(this.state.email==="" || this.state.password==="")
+        if (this.state.email === "" || this.state.password === "")
             return;
         this.props.login(this.state.email, this.state.password);
     };
@@ -32,13 +32,14 @@ class Login extends React.Component {
                 <div className="align">
                     <div className="grid align__item">
                         <div className="register">
-                            <img src={this.props.icon===undefined ? defaultIcon : this.props.icon} height={80} width={80} alt={"Login"}/>
+                            <img src={this.props.icon === undefined ? defaultIcon : this.props.icon} height={80}
+                                 width={80} alt={"Login"}/>
                             <h2>Login</h2>
                             <h4>{this.props.motto}</h4>
                             <form className="form">
                                 <div className="form__field">
                                     <input required onChange={this.changeValue} name={"email"}
-                                           type={"email"}autoComplete={"username"}
+                                           type={"email"} autoComplete={"username"}
                                            placeholder="Please enter your email here"/>
                                 </div>
                                 <div className="form__field">
