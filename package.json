@@ -1,11 +1,12 @@
 {
   "name": "react-mua-login",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "private": false,
   "repository": "https://github.com/maifeeulasad/react-mua-login",
   "author": "Maifee Ul Asad",
   "license": "https://github.com/maifeeulasad/react-mua-login/blob/master/LICENSE",
   "bugs": "https://github.com/maifeeulasad/react-mua-login/issues",
+  "main": "index.js",
   "babel": {
     "presets": [
       "@babel/preset-react"
