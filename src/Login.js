@@ -5,7 +5,6 @@ import "./login.css";
 /*
     Original SASS by Marco Biedermann - https://codepen.io/marcobiedermann/pen/wKNGzo
     Default icon source - https://www.flaticon.com/free-icon/login_152533
-    Test icon source - https://www.flaticon.com/free-icon/like_535234?term=round&page=1&position=9
  */
 
 class Login extends React.Component {
