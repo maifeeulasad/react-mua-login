@@ -13,7 +13,7 @@ And call it simply like this :
 ```typescript jsx
 
 import Login from "react-mua-signup";
-
+...
 <Login
       login={(username, password) => {
         console.debug(username);
