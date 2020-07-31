@@ -12,7 +12,7 @@ npm install react-mua-login
 And call it simply like this :
 ```typescript jsx
 
-import Login from "react-mua-signup";
+import Login from "react-mua-login";
 ...
 <Login
       login={(username, password) => {
