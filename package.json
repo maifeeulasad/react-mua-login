@@ -1,6 +1,6 @@
 {
   "name": "react-mua-login",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "private": false,
   "repository": "https://github.com/maifeeulasad/react-mua-login",
   "author": "Maifee Ul Asad",
@@ -14,7 +14,10 @@
     ]
   },
   "peerDependencies": {
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/core": "^7.10.5"
   },
   "scripts": {
     "publish:npm": "rm -rf dist && mkdir dist &&  babel ./src -d dist --copy-files"
@@ -33,9 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "@babel/core": "^7.10.5"
   }
 }
