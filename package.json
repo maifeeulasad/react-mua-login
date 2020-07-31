@@ -1,6 +1,6 @@
 {
   "name": "react-mua-login",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "private": false,
   "repository": "https://github.com/maifeeulasad/react-mua-login",
   "author": "Maifee Ul Asad",
@@ -9,6 +9,7 @@
   "main": "index.js",
   "babel": {
     "presets": [
+      "@babel/preset-env",
       "@babel/preset-react"
     ]
   },
