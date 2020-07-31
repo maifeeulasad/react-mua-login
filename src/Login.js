@@ -19,11 +19,12 @@ class Login extends React.Component {
         this.login=this.login.bind(this);
     }
 
-    changeValue = (e) => {
+
+    changeValue(e) {
         this.setState({[e.target.name]: e.target.value});
     };
 
-    login = (e) => {
+    login(e) {
         e.preventDefault();
         if (this.state.email === "" || this.state.password === "")
             return;
