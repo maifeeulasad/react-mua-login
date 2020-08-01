@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles.module.css'
+import style from './styles.module.css'
 import defaultIcon from './login.svg'
 
 /*
@@ -31,9 +31,9 @@ export default class Login extends React.Component {
   render() {
     return (
       <div>
-        <div className='align'>
-          <div className='grid align__item'>
-            <div className='register'>
+        <div className={style.align}>
+          <div className={style.grid + style.align__itemStart}>
+            <div className={style.register}>
               <img
                 src={
                   this.props.icon === undefined ? defaultIcon : this.props.icon
@@ -44,8 +44,8 @@ export default class Login extends React.Component {
               />
               <h2>Login</h2>
               <h4>{this.props.motto}</h4>
-              <form className='form'>
-                <div className='form__field'>
+              <form className={style.form}>
+                <div className={style.form__field}>
                   <input
                     required
                     onChange={this.changeValue}
@@ -55,7 +55,7 @@ export default class Login extends React.Component {
                     placeholder='Please enter your email here'
                   />
                 </div>
-                <div className='form__field'>
+                <div className={style.form__field}>
                   <input
                     required
                     onChange={this.changeValue}
@@ -65,8 +65,8 @@ export default class Login extends React.Component {
                     placeholder='Please enter your password here'
                   />
                 </div>
-                <div className='form__field'>
-                  <input type='submit' onClick={this.login} value='Login'/>
+                <div className={style.form__field}>
+                  <input type='submit' onClick={this.login} value='Login' />
                 </div>
               </form>
               <p>
