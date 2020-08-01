@@ -15,24 +15,24 @@ export default class Login extends React.Component {
       password: ''
     }
     this.changeValue = this.changeValue.bind(this)
-    this.login = this.login.bind(this)
+    this.onLogin = this.onLogin.bind(this)
   }
 
   changeValue(e) {
     this.setState({ [e.target.name]: e.target.value })
   }
 
-  login(e) {
+  onLogin(e) {
     e.preventDefault()
     if (this.state.email === '' || this.state.password === '') return
-    this.props.login(this.state.email, this.state.password)
+    this.props.onLogin(this.state.email, this.state.password)
   }
 
   render() {
     return (
       <div>
         <div className={style.align}>
-          <div className={style.grid + style.align__itemStart}>
+          <div className={style.grid + ' ' + style.align__item}>
             <div className={style.register}>
               <img
                 src={
@@ -66,7 +66,7 @@ export default class Login extends React.Component {
                   />
                 </div>
                 <div className={style.form__field}>
-                  <input type='submit' onClick={this.login} value='Login' />
+                  <input type='submit' onClick={this.onLogin} value='Login' />
                 </div>
               </form>
               <p>

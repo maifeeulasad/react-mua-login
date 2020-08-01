@@ -15,14 +15,16 @@ npm install --save react-mua-login
 ```jsx
 import React, { Component } from 'react'
 
+
 import Login from 'react-mua-login';
 import 'react-mua-login/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <Login />
-  }
-}
+ReactDOM.render(
+<Login onLogin={(username,password)=>{
+  console.debug(username);
+  console.debug(password);
+}}/>, document.getElementById('root'))
+
 ```
 
 ## License
