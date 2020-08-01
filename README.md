@@ -1,31 +1,30 @@
 # react-mua-login
 
-Why wasting your time designing and writing the same code for 
-every project again and again. Just forget about all these hassles,
- and concentrate on your original purpose.
- 
-All you have to do is 
+> Just another Login template for React.js
+
+[![NPM](https://img.shields.io/npm/v/react-mua-login.svg)](https://www.npmjs.com/package/react-mua-login) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+## Install
+
+```bash
+npm install --save react-mua-login
 ```
-npm install react-mua-login
+
+## Usage
+
+```jsx
+import React, { Component } from 'react'
+
+import MyComponent from 'react-mua-login'
+import 'react-mua-login/dist/index.css'
+
+class Example extends Component {
+  render() {
+    return <MyComponent />
+  }
+}
 ```
 
-And call it simply like this :
-```typescript jsx
+## License
 
-import Login from "react-mua-login";
-...
-<Login
-      login={(username, password) => {
-        console.debug(username);
-        console.debug(password);
-      }}
-    />
-```
-Now you are good to go.
-
-Live example : 
-[codesandbox.io](https://codesandbox.io/s/react-mua-login-sample-x12dr?file=/src/index.js)
-
-
-To-Do :
-Complete documentation
+MIT © [maifeeulasad](https://github.com/maifeeulasad)
