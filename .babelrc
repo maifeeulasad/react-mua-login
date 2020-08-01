@@ -1,11 +1,7 @@
 {
-  "presets": [
-    "@babel/preset-env",
-    "@babel/preset-react"
-  ],
+  "presets": [["es2015", {"modules": false, "loose": true}], "stage-0", "react"],
   "plugins": [
-    [
-      "@babel/plugin-transform-react-jsx"
-    ]
+    ["transform-react-remove-prop-types", { "mode": "unsafe-wrap" }],
+    "transform-babel-env-inline"
   ]
 }
