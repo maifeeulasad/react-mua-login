@@ -3,5 +3,10 @@
     "@babel/preset-env",
     "@babel/preset-react",
     "@babel/plugin-transform-react-jsx"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-react-jsx"
+    ]
   ]
 }
