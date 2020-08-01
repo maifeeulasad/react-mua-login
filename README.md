@@ -15,12 +15,12 @@ npm install --save react-mua-login
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-mua-login'
+import Login from 'react-mua-login';
 import 'react-mua-login/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <Login />
   }
 }
 ```
