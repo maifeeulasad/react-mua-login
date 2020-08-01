@@ -7,7 +7,7 @@ import defaultIcon from './login.svg'
     Default icon source - https://www.flaticon.com/free-icon/login_152533
  */
 
-export class Login extends React.Component {
+export default class Login extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
